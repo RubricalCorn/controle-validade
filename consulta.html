@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Estoque</title>
+    <link rel="stylesheet" href="consulta.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="menu">MENU PRINCIPAL</div>
+</header>
+
+<main class="container">
+    <h1>CONSULTA DE ESTOQUE</h1>
+    
+    <div class="voltar-menu">
+    <a href="index.html">← Voltar ao Menu</a>
+</div>
+
+    <section class="filtros">
+        <div class="campo">
+            <label>PRODUTO OU SKU</label>
+            <input type="text" id="filtroProduto" placeholder="Buscar por nome ou código">
+        </div>
+
+        <div class="campo">
+            <label>LOTE</label>
+            <input type="text" id="filtroLote" placeholder="Nº do lote">
+        </div>
+
+        <button onclick="filtrar()">BUSCAR</button>
+        <button class="secundario" onclick="abrirModal()">NOVO PRODUTO</button>
+    </section>
+
+    <section class="tabela-box">
+        <table>
+            <thead>
+                <tr>
+                    <th>PRODUTO / SKU</th>
+                    <th>LOTE</th>
+                    <th>VALIDADE</th>
+                    <th>QTD. DISP.</th>
+                    <th>RESERVADO</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+
+        <div class="rodape" id="contador"></div>
+    </section>
+</main>
+
+<div class="modal" id="modal">
+    <div class="modal-conteudo">
+        <h2>Novo Produto</h2>
+
+        <input id="novoNome" placeholder="Nome do produto">
+        <input id="novoSku" placeholder="SKU">
+        <input id="novoLote" placeholder="Lote">
+        <div class="campo-modal">
+            <label for="novaValidade">Validade</label>
+            <input
+                id="novaValidade"
+                placeholder="DD/MM/AAAA"
+                maxlength="10"
+                inputmode="numeric"
+                aria-describedby="erroValidade"
+            >
+            <small id="erroValidade" class="erro-campo"></small>
+        </div>
+        <input id="novaQuantidade" placeholder="Quantidade">
+        <input id="novoReservado" placeholder="Reservado">
+
+        <div class="acoes-modal">
+            <button onclick="salvarProduto()">Salvar</button>
+            <button class="secundario" onclick="fecharModal()">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<script src="consulta.js"></script>
+</body>
+</html>

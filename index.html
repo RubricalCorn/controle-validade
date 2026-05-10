@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="left">
+        <!-- Ícone de quatro quadrados coloridos -->
+        <span class="icon-set">🟨🟥🟦🟩</span>
+        <span class="menu-title">Menu Principal</span>
+    </div>
+    <div class="right">
+        <!-- Ícones funcionais à direita -->
+        <div class="icon notification">
+            🔔<span class="badge">1</span>
+        </div>
+        <div class="icon">🌐</div>
+        <div class="icon">🛟</div>
+        <div class="icon">👤</div>
+    </div>
+</header>
+
+<main class="container">
+    <h1>CONTROLE DE ESTOQUE</h1>
+
+    <div class="cards-container">
+        <!-- Linha 1 de cartões -->
+        <div class="card">
+            <div class="card-icon">👤</div>
+            <div class="card-label">Gestão de Usuários</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">👥</div>
+            <div class="card-label">Cadastro de Fornecedores</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">📦</div>
+            <div class="card-label">Cadastro de Produtos</div>
+        </div>
+        <!-- Linha 2 de cartões -->
+        <a class="card" href="consulta.html">
+            <div class="card-icon">🔍</div>
+            <div class="card-label">Consulta de Estoque</div>
+        </a>
+        <div class="card">
+            <div class="card-icon">🛒</div>
+            <div class="card-label">Saída do Estoque</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🛒➕</div>
+            <div class="card-label">Entradas no Estoque</div>
+        </div>
+    </div>
+
+    <button class="back-button" onclick="history.back()">Voltar</button>
+</main>
+
+</body>
+</html>

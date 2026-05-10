@@ -1,0 +1,121 @@
+/* menu.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #2f3c52;
+}
+
+/* Barra de cabeçalho */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 30px;
+    border-bottom: 1px solid #e3e6eb;
+}
+
+.topbar .left {
+    display: flex;
+    align-items: center;
+}
+
+.icon-set {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.menu-title {
+    font-size: 18px;
+    color: #e28a28;
+    font-weight: bold;
+}
+
+.topbar .right .icon {
+    font-size: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+/* Badge de notificação */
+.notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #d94a4a;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Corpo principal */
+.container {
+    width: 88%;
+    margin: 30px auto;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 4px;
+    color: #2f3c52;
+    margin-bottom: 30px;
+}
+
+/* Layout dos cartões */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 180px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: default; /* indicador de card estático */
+}
+
+.card-icon {
+    font-size: 40px;
+}
+
+.card-label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Botão Voltar no rodapé */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e79339;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
