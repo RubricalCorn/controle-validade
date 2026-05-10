@@ -4,18 +4,30 @@ Protótipo navegável desenvolvido para a Atividade Avaliativa 1.
 
 ## Objetivo
 
-Demonstrar o fluxo principal de consulta de estoque e monitoramento de validade de produtos em um ambiente de varejo online com operação via WhatsApp.
+Demonstrar o fluxo principal de consulta de estoque e controle de validade de produtos em um ambiente de varejo online com operação via WhatsApp.
 
-## Funcionalidades implementadas
+## Escopo do protótipo
 
-- Menu principal de navegação
-- Consulta de estoque
-- Busca por produto ou lote
-- Cadastro simples de novo produto
-- Classificação automática de validade:
-  - normal
-  - alerta
-  - vencido
+O protótipo representa uma simulação funcional do módulo de consulta de estoque.
+
+Foi implementada uma interface de navegação com menu principal e acesso ao módulo de consulta.
+
+No módulo de consulta, o usuário pode:
+
+- pesquisar produtos por nome ou lote
+- visualizar validade
+- visualizar quantidade disponível
+- visualizar quantidade reservada
+- visualizar classificação automática de validade
+- cadastrar novos produtos para atualização imediata da listagem
+
+## Regras de negócio
+
+A classificação de validade ocorre automaticamente conforme a data informada:
+
+- **Normal**: validade superior a 30 dias
+- **Alerta**: validade em até 30 dias
+- **Vencido**: validade inferior à data atual
 
 ## Tecnologias utilizadas
 
@@ -25,8 +37,10 @@ Demonstrar o fluxo principal de consulta de estoque e monitoramento de validade 
 
 ## Acesso ao protótipo
 
-(cole aqui a URL do GitHub Pages)
+Cole aqui a URL do GitHub Pages.
 
 ## Observação
 
-Este protótipo tem como finalidade validar fluxo de navegação, interface e comportamento funcional. O único botão clicavel é o "Consulta de Estoque" A implementação final do sistema permanece prevista em Python.
+Este protótipo tem como finalidade validar fluxo funcional, navegação e interface.
+
+A implementação final do sistema permanece prevista em Python.
