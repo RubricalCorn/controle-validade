@@ -37,7 +37,7 @@ A classificação de validade ocorre automaticamente conforme a data informada:
 
 ## Acesso ao protótipo
 
-Cole aqui a URL do GitHub Pages.
+https://rubricalcorn.github.io/controle-validade/
 
 ## Observação
 
